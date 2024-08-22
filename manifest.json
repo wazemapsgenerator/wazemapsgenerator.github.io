@@ -3,10 +3,10 @@
   "description": "Maps is the most popular online mapping service with interactive zooming and panning, directions, location details, satellite views. You can include a Waze Map on your site that includes a pin dropped at the address of a location. This is useful for your own business, but can also be used by bloggers, reviewers, and other websites that discuss specific establishments.",
   "dir": "auto",
   "display": "standalone",
-  "name": "Waze Generator - Maps",
+  "name": "Waze Map Generator",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "Waze Map Generator",
+  "short_name": "Waze Maps Generator",
   "start_url": ".",
   "theme_color": "#3d95d3",
   "categories": [
@@ -485,8 +485,8 @@
   ],
   "shortcuts": [
     {
-      "name": "Waze Generator - Maps",
-      "short_name": "Waze Map Generator",
+      "name": "Waze Map Generator",
+      "short_name": "Waze Maps Generator",
       "description": "Waze map generator",
       "url": "./images/shortcuts/und.png",
       "icons": [
