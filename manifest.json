@@ -6,7 +6,7 @@
   "name": "Waze Map Generator",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "WMG",
+  "short_name": "Waze Map Generator",
   "start_url": ".",
   "theme_color": "#3d95d3",
   "categories": [
@@ -486,7 +486,7 @@
   "shortcuts": [
     {
       "name": "Waze Map Generator",
-      "short_name": "WMG",
+      "short_name": "Waze Map Generator",
       "description": "Waze map generator",
       "url": "./images/shortcuts/und.png",
       "icons": [
