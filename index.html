@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Free Waze Maps Generator - Waze Maps API</title>
+    <meta name="description" content="Add a Waze Map location to your site in just a few clicks. Generate code for Waze Maps absolutely free." />
+    <meta name="google-site-verification" content="XmcuLICdS0CQ4bETu6OB64thP05teFiR5TN5ZzuDyOQ" />
+    <meta name="msvalidate.01" content="6F5F904B2C469E19377A56105C3BD66C" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Free Waze Maps Code Generator" />
+    <meta property="og:description" content="Free Waze Maps Code Generator. Waze Maps iframe Generator. Embed Waze Maps HTML. Waze Maps for Website with two clicks. Type in your Title & Address, copy the HTML-Code. Paste the Code to your Website." />
+<link rel="icon" href="/favicon.png" type="image/png"/>
+<meta name="keywords" content="generator,google,embed,maps" />
+<meta property="og:url" content="https://embedgooglemap.github.io/" />
+<meta property="og:site_name" content="Free Waze Maps Code Generator" />
+<meta property="og:image" content="https://embedgooglemap.github.io/free-google-maps-code-generator.png" />
+<meta property="og:image:secure_url" content="https://embedgooglemap.github.io/free-google-maps-code-generator.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@freegooglemapscodegenerator" />
+<meta name="twitter:domain" content="https://embedgooglemap.github.io/" />
+<meta name="twitter:title" content="Free Waze Maps Code Generator" />
+<meta name="twitter:description" content="Free Waze Maps Code Generator. Waze Maps iframe Generator. Embed Waze Maps HTML. Waze Maps for Website with two clicks. Type in your Title & Address, copy the HTML-Code. Paste the Code to your Website." />
+<meta name="twitter:image" content="https://embedgooglemap.github.io/free-google-maps-code-generator.png" />
+
+    <link rel="canonical" href="https://embedgooglemap.github.io/" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+<link rel="manifest" href="./manifest.json">
+    <style>
+        #formap {
+            overflow: hidden;
+            transition: all 0.5s;
+            width: 600px;
+            height: 400px;
+            margin: 1rem auto;
+        }
+        @media screen and (max-width:600px){
+          #formap {
+            max-width:100%;
+          }
+        }
+        i.material-icons {
+            vertical-align: middle;
+        }
+        form {
+            padding-top: 2rem;
+        }
+        #gmapcode {
+            height: 7em;
+        }
+    </style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQ2RN2B');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+    <header class="indigo darken-4 white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="center-align">Waze Maps Code Generator</h1>
+                </div>
+            </div>
+        </div>
+        <nav class="indigo">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <!--
+              <a href="#" class="brand-logo">G</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+              -->
+                        <ul class="left">
+                            <li>
+                                <a href="#generator">Generator</a>
+                            </li>
+                            <li>
+                                <a href="#sponsors">Sponsors</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" id="generator" class="scrollspy">
+                <div class="row card-panel">
+                    <div class="col s11 m8">
+                        <div class="input-field">
+                            <i class="material-icons  prefix">search</i>
+                            <input type="text" name="s" id="s" value="university of san francisco" placeholder="Enter Adress" data-role="none">
+                            <label for="s">Enter your Address:</label>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="input-field center-align">
+                            <button id="h" data-target="modal1" class="btn btn-large  modal-trigger">Get HTML-Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row card-panel">
+                    <div class="col s3">
+                        <!-- <h6>Satellite </h6>
+                        <div class="input-field">
+                            <div class="switch">
+                                <label>
+                        Off
+                        <input type="checkbox" id="ic" name="ic">
+                        <span class="lever"></span>
+                        On
+                      </label>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col s3">
+                        <h6 class="mapz">Map Zoom </h6>
+                        <div class="input-field">
+                            <p class="range-field">
+                                <input id="zoom" type="range" min="1" max="20" step="1" value="13">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                        <h6>Width (px): </h6>
+                        <p class="range-field">
+                            <input type="range" name="width" id="width" min="240" max="1080" step="10" value="600" placeholder="" class="numeric">
+                        </p>
+                    </div>
+                    <div class="col s3">
+                        <h6>Height (px):</h6>
+                        <p class="range-field">
+                            <input type="range" name="height" id="height" min="240" max="1080" step="10" value="400" placeholder="" class="numeric">
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div id="formap">
+                    <iframe width="600" height="400" id="gmap_canvas" src="https://embed.waze.com/en/iframe?&zoom=10&lat=41.8755616&lon=-87.6244212&ct=livemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Code</h4>
+                        <p>Copy & Paste this Google-Maps-Code to your Website:</p>
+                        <textarea id="gmapcode" rows="5">
+
+              </textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row scrollspy" id="about">
+                <div class="col s12 card-panel">
+                    <h3>About</h3>
+                    <p>Waze Maps is the most popular online mapping service with interactive zooming and panning, directions, location details, satellite views.
+                      You can include a Waze Map on your site that includes a pin dropped at the address of a location. This is useful for your own business, but can also be used by bloggers, reviewers, and other websites that discuss specific establishments. </p>
+                    <p>
+<h2>How do I create a custom Waze Map?</h2>
+	<p>Waze Maps is a wonderful tool to use when you need to map out a location. However, sometimes you want to customize your map and add additional elements such as text, graphics, and other features. Waze Maps will not let users customize the map directly unless they create their own code.</p>
+<h2>How to generate custom code for Waze Maps</h2>
+	<p>There are many ways to generate custom code for Waze Maps. One way involves downloading the code from the developer website and then uploading it into your webpage's source code. Another way is through an advanced Waze Map generator that allows you to customize every aspect of the map through a simple interface.</p>
+<h2>What is Waze Maps API?</h2>
+<p>The Waze Maps API offers a number of benefits that are not available on other mapping APIs. It has more data points than some other services, more information about street level detail coverage, more accurate calculations for distance and travel time between two points in the world. This makes it ideal for location based services or applications that require mapping functionality.</p>
+<h2>What is Waze Maps?</h2>
+<p>Waze Maps is a mapping service that offers directions to users of Android, iOS, BlackBerry OS, Windows Phone, Windows 10 Mobile.
+Waze Maps has many uses for both personal and business use. It can be used to get directions from one place to another, look for places on the map or find out what business are around you.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer grey darken-4 white-text">
+        <div class="container">
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col s12">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; 2022 embedgooglemap.github.io
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How do I create a custom Waze Map?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Waze Maps is a wonderful tool to use when you need to map out a location. However, sometimes you want to customize your map and add additional elements such as text, graphics, and other features. Waze Maps will not let users customize the map directly unless they create their own code."
+    }
+  },{
+    "@type": "Question",
+    "name": "How to generate custom code for Waze Maps?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There are many ways to generate custom code for Waze Maps. One way involves downloading the code from the developer website and then uploading it into your webpage's source code. Another way is through an advanced Waze Map generator that allows you to customize every aspect of the map through a simple interface."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is Waze Maps API?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Waze Maps API offers a number of benefits that are not available on other mapping APIs. It has more data points than some other services, more information about street level detail coverage, more accurate calculations for distance and travel time between two points in the world. This makes it ideal for location based services or applications that require mapping functionality."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is Waze Maps?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Waze Maps is a mapping service that offers directions to users of Android, iOS, BlackBerry OS, Windows Phone, Windows 10 Mobile.
+Waze Maps has many uses for both personal and business use. It can be used to get directions from one place to another, look for places on the map or find out what business are around you."
+    }
+  }]
+}
+</script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+    <script>
+        (function($) {
+
+            async function rebuildmap() {
+                let lat = '';
+                let lon = '';
+                let text = encodeURI($('#s').val());
+                const apiUrl = `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${text}`;
+                const response = await fetch(apiUrl);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+
+                const data = await response.json();
+                lat = data[0].lat;
+                lon = data[0].lon;
+
+                url = "https://embed.waze.com/en/iframe";
+                //url += encodeURI($('#s').val());
+                // url += '&t=';
+                // if ($('#ic').is(':checked')) {
+                //     url += 'k';
+                // } else {
+                //     url += '';
+                // }
+                url += '?zoom=' + $('#zoom').val();
+                //url += '&ie=UTF8&iwloc=&output=embed';
+
+                url += `&lat=${lat}&lon=${lon}`;
+
+                url += '&ct=livemap';
+
+                let width = $('#width').val();
+
+                if (window.innerWidth < width) {
+                    width = window.innerWidth - 21;
+                }
+
+               // console.log(url);
+
+                $('#formap').empty();
+
+                $('<iframe>', {
+                    src: url,
+                    id: 'gmap_canvas',
+                    frameborder: 0,
+                    scrolling: 'no',
+                    width: width,
+                    height: $('#height').val()
+                }).appendTo('#formap');
+
+                let gcode = $('<iframe>', {
+                    src: url,
+                    id: 'gmap_canvas',
+                    frameborder: 0,
+                    scrolling: 'no',
+                    width: $('#width').val(),
+                    height: $('#height').val()
+                }).prop('outerHTML');
+                
+                gcode += '<a href="https://wazemapsgenerator.github.io" style="display:none;">map generator</a>';
+		gcode += '<a href="https://www.ivatech.dev" style="display:none;">website development</a>';
+                $('#gmapcode').val(gcode);
+            }
+
+            var timer;
+
+            $('select').formSelect();
+            $('.modal').modal();
+            $('.scrollspy').scrollSpy();
+
+            rebuildmap();
+
+            function startrebuild() {
+                clearTimeout(timer);
+                timer = setTimeout(rebuildmap, 500);
+            }
+            $('#s,#zoom,#ic').on('change', startrebuild);
+            $('#s').on('keyup', startrebuild);
+            $("#width,#height").on("change", function() {
+                let width = $('#width').val();
+
+                if (window.innerWidth < width) {
+                    width = window.innerWidth - 21;
+                }
+
+                $("#gmap_canvas").css({
+                    'width': width + 'px',
+                    'height': $('#height').val() + 'px'
+                });
+                $("#formap").css({
+                    'width': width + 'px',
+                    'height': $('#height').val() + 'px'
+                });
+            });
+
+            
+        })(jQuery)
+    </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ2RN2B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="js/app.js"></script>
+</body>
+</html>
