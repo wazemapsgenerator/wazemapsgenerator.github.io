@@ -24,11 +24,6 @@ self.addEventListener('activate', async event => {
     console.log('Service worker has been activated');
 });
 
-//self.addEventListener('fetch', event => {
-//    console.log(`Trying to fetch ${event.request.url}`);
-//    event.respondWith(checkCache(event.request));
-//});
-
 async function checkCache(req) {
     const cachedResponse = await caches.match(req);
     return cachedResponse || checkOnline(req);
@@ -45,10 +40,7 @@ async function checkOnline(req) {
         if (cachedRes) {
             return cachedRes;
         } else if (req.url.indexOf('.html') !== -1) {
-            return ;//caches.match('./offline.html');
+            return ;
         } 
-        // else {
-        //     return caches.match('./images/no-image.jpg');
-        // }
     }
 }

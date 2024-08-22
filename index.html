@@ -10,20 +10,20 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Free Waze Maps Code Generator" />
     <meta property="og:description" content="Free Waze Maps Code Generator. Waze Maps iframe Generator. Embed Waze Maps HTML. Waze Maps for Website with two clicks. Type in your Title & Address, copy the HTML-Code. Paste the Code to your Website." />
-<link rel="icon" href="/favicon.png" type="image/png"/>
-<meta name="keywords" content="generator,google,embed,maps" />
-<meta property="og:url" content="https://embedgooglemap.github.io/" />
+<link rel="icon" href="/icon.png" type="image/png"/>
+<meta name="keywords" content="generator,waze,embed,maps" />
+<meta property="og:url" content="https://wazemapsgenerator.github.io/" />
 <meta property="og:site_name" content="Free Waze Maps Code Generator" />
-<meta property="og:image" content="https://embedgooglemap.github.io/free-google-maps-code-generator.png" />
-<meta property="og:image:secure_url" content="https://embedgooglemap.github.io/free-google-maps-code-generator.png" />
+<meta property="og:image" content="https://wazemapsgenerator.github.io/free-waze-maps-code-generator.png" />
+<meta property="og:image:secure_url" content="https://wazemapsgenerator.github.io/free-waze-maps-code-generator.png" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@freegooglemapscodegenerator" />
-<meta name="twitter:domain" content="https://embedgooglemap.github.io/" />
+<meta name="twitter:site" content="@freewazemapscodegenerator" />
+<meta name="twitter:domain" content="https://wazemapsgenerator.github.io/" />
 <meta name="twitter:title" content="Free Waze Maps Code Generator" />
 <meta name="twitter:description" content="Free Waze Maps Code Generator. Waze Maps iframe Generator. Embed Waze Maps HTML. Waze Maps for Website with two clicks. Type in your Title & Address, copy the HTML-Code. Paste the Code to your Website." />
-<meta name="twitter:image" content="https://embedgooglemap.github.io/free-google-maps-code-generator.png" />
+<meta name="twitter:image" content="https://wazemapsgenerator.github.io/free-waze-maps-code-generator.png" />
 
-    <link rel="canonical" href="https://embedgooglemap.github.io/" />
+    <link rel="canonical" href="https://wazemapsgenerator.github.io/" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
@@ -84,9 +84,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <li>
                                 <a href="#generator">Generator</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#sponsors">Sponsors</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#about">About</a>
                             </li>
@@ -114,20 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                 </div>
                 <div class="row card-panel">
-                    <div class="col s3">
-                        <!-- <h6>Satellite </h6>
-                        <div class="input-field">
-                            <div class="switch">
-                                <label>
-                        Off
-                        <input type="checkbox" id="ic" name="ic">
-                        <span class="lever"></span>
-                        On
-                      </label>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col s3">
+                    <div class="col s4">
                         <h6 class="mapz">Map Zoom </h6>
                         <div class="input-field">
                             <p class="range-field">
@@ -135,13 +122,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </p>
                         </div>
                     </div>
-                    <div class="col s3">
+                    <div class="col s4">
                         <h6>Width (px): </h6>
                         <p class="range-field">
                             <input type="range" name="width" id="width" min="240" max="1080" step="10" value="600" placeholder="" class="numeric">
                         </p>
                     </div>
-                    <div class="col s3">
+                    <div class="col s4">
                         <h6>Height (px):</h6>
                         <p class="range-field">
                             <input type="range" name="height" id="height" min="240" max="1080" step="10" value="400" placeholder="" class="numeric">
@@ -153,12 +140,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row">
             <div class="col s12">
                 <div id="formap">
-                    <iframe width="600" height="400" id="gmap_canvas" src="https://embed.waze.com/en/iframe?&zoom=10&lat=41.8755616&lon=-87.6244212&ct=livemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <iframe width="600" height="400" id="gmap_canvas" src="https://embed.waze.com/en/iframe?&zoom=10&lat=41.8755616&lon=-87.6244212&pin=1&ct=livemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                         <h4>Code</h4>
-                        <p>Copy & Paste this Google-Maps-Code to your Website:</p>
+                        <p>Copy & Paste this Waze-Maps-Code to your Website:</p>
                         <textarea id="gmapcode" rows="5">
 
               </textarea>
@@ -198,7 +185,7 @@ Waze Maps has many uses for both personal and business use. It can be used to ge
         </div>
         <div class="footer-copyright">
             <div class="container">
-                &copy; 2022 embedgooglemap.github.io
+                &copy; 2022 wazemapsgenerator.github.io
             </div>
         </div>
         </div>
@@ -267,10 +254,8 @@ Waze Maps has many uses for both personal and business use. It can be used to ge
                 //     url += '';
                 // }
                 url += '?zoom=' + $('#zoom').val();
-                //url += '&ie=UTF8&iwloc=&output=embed';
-
                 url += `&lat=${lat}&lon=${lon}`;
-
+                url += '&pin=1';
                 url += '&ct=livemap';
 
                 let width = $('#width').val();
