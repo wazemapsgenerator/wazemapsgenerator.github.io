@@ -246,13 +246,6 @@ Waze Maps has many uses for both personal and business use. It can be used to ge
                 lon = data[0].lon;
 
                 url = "https://embed.waze.com/en/iframe";
-                //url += encodeURI($('#s').val());
-                // url += '&t=';
-                // if ($('#ic').is(':checked')) {
-                //     url += 'k';
-                // } else {
-                //     url += '';
-                // }
                 url += '?zoom=' + $('#zoom').val();
                 url += `&lat=${lat}&lon=${lon}`;
                 url += '&pin=1';
@@ -263,8 +256,6 @@ Waze Maps has many uses for both personal and business use. It can be used to ge
                 if (window.innerWidth < width) {
                     width = window.innerWidth - 21;
                 }
-
-               // console.log(url);
 
                 $('#formap').empty();
 
@@ -287,7 +278,7 @@ Waze Maps has many uses for both personal and business use. It can be used to ge
                 }).prop('outerHTML');
                 
                 gcode += '<a href="https://wazemapsgenerator.github.io" style="display:none;">map generator</a>';
-		gcode += '<a href="https://www.ivatech.dev" style="display:none;">website development</a>';
+		        gcode += '<a href="https://ivatech.dev/miami-wordpress-developers/" style="display:none;">website development</a>';
                 $('#gmapcode').val(gcode);
             }
 
